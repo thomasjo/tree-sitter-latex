@@ -1,0 +1,26 @@
+{
+  "name": "tree-sitter-latex",
+  "version": "0.0.0",
+  "description": "LaTeX grammar for Tree-sitter",
+  "keywords": [
+    "latex",
+    "grammar",
+    "tree-sitter"
+  ],
+  "homepage": "https://github.com/thomasjo/tree-sitter-latex",
+  "bugs": "https://github.com/thomasjo/tree-sitter-latex/issues",
+  "license": "MIT",
+  "author": "Thomas Johansen <thomasjo@gmail.com>",
+  "main": "index.js",
+  "repository": "thomasjo/tree-sitter-latex",
+  "scripts": {
+    "build": "tree-sitter generate && node-gyp build",
+    "test": "tree-sitter test && tree-sitter parse examples/* --quiet --time"
+  },
+  "dependencies": {
+    "nan": "^2.10.0"
+  },
+  "devDependencies": {
+    "tree-sitter-cli": "^0.13.6"
+  }
+}
